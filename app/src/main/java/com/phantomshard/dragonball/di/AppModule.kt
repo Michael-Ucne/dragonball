@@ -29,11 +29,9 @@ object AppModule {
     @Provides
     @Singleton
     fun provideApi(moshi: Moshi): DragonBallApi {
-        val json = Json { ignoreUnknownKeys = true }
         return Retrofit.Builder()
             .baseUrl("https://dragonball-api.com/api/")
             .addConverterFactory(MoshiConverterFactory.create(moshi))
-            //.addConverterFactory(json.asConverterFactory("application/json".toMediaType()))
             .build()
             .create(DragonBallApi::class.java)
     }
