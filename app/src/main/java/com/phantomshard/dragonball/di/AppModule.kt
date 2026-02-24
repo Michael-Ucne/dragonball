@@ -1,8 +1,8 @@
 package com.phantomshard.dragonball.di
 
-import com.phantomshard.dragonball.data.CharacterRepositoryImpl
+import com.phantomshard.dragonball.data.repository.CharacterRepositoryImpl
 import com.phantomshard.dragonball.data.remote.DragonBallApi
-import com.phantomshard.dragonball.domain.CharacterRepository
+import com.phantomshard.dragonball.domain.repository.CharacterRepository
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dagger.Module
